@@ -1,0 +1,30 @@
+🌱 AgriTrack ZW updates
+
+Week 1   
+I started things off by laying down the core structure of the AgriTrack ZW website. Using HTML5 semantics, I set up the homepage and a farmer registration form. 
+To make the platform useful, I added sections for crop data, weather updates and agricultural alerts.
+Navigation links were also introduced, making it easy to move between the main pages.
+
+Week 2  
+With the skeleton in place, I turned the attention to design. 
+I used CSS styling to give the site a new look, improving layouts, colours, spacing and typography.
+I made sure the website fits well across different screen sizes so that farmers can access it on any device. 
+I added maize, sorghum and wheat images, giving the website a better view.
+
+Week 3 
+During this week, this is when the sited started taking shape. 
+I built a crop tracking dashboard powered by JavaScript allowing farmers to add, harvest and remove crops. 
+To keep the code neat and organized, I applied the Module Pattern and for communication between components, I used an Observer Pattern with an EventBus.  
+
+The dashboard follows a Model View Controller structure which ensures flexibility and simplicity. 
+On the farmer registration form, I introduced real-time validation, blur checks, inline error messages and a success message for valid submissions.
+Activated agricultural alerts, where farmers can now dismiss them with events triggered to track those actions.
+
+Week 4
+I added live weather data using a free keyless weather API, with asynchronous fetching, JSON parsing, error handling and weather information for all ten Zimbabwean provinces using Promise.all(). 
+Updated the homepage weather section to display the live weather results. Farm registration and crop data were also updated to use localStorage so that information can save after refreshing the page.
+I added IoT sensor dashboard with simulated soil moisture, temperature, humidity and light intensity readings, which update automatically at regular intervals. 
+The IoT sensor readings were connected to the Week 3 event bus with status classifications and an on-page alert log for readings that exceed defined thresholds. 
+I added comments to explain the use of the keyless weather API and how the simulated sensors could be replaced by a real connection in the future.
+
+
